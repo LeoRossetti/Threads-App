@@ -1,27 +1,30 @@
-import { ClerkProvider } from "@clerk/nextjs"
-import { Inter } from "next/font/google"
+import type { Metadata } from 'next'
+import { Geist, Geist_Mono } from 'next/font/google'
+import '../globals.css'
 
-import '../globals.css';
+const geistSans = Geist({
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
+})
 
-export const metadata = {
-    title: "Threads",
-    description: "A Next.js Threads Application"
+const geistMono = Geist_Mono({
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
+})
+
+export const metadata: Metadata = {
+  title: 'Threads - Authentication',
+  description: 'Sign in to your Threads account',
 }
 
-const inter = Inter({subsets: ["latin"]})
-
-export default function RootLayout({
-    children
-}: {
-    children: React.ReactNode
-}) {
-    return (
-    <ClerkProvider>
-        <html lang="en">
-            <body className={'${inter.className} bg-dark-1'}>
-                {children}
-            </body>
-        </html>
-    </ClerkProvider>
-    )
+export default function AuthLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <div className="w-full min-h-screen flex justify-center items-center bg-dark-1">
+      {children}
+    </div>
+  )
 }
