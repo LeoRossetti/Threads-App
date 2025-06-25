@@ -170,10 +170,55 @@ module.exports = {
           fontWeight: "600",
         },
       ],
+      // Standard Tailwind text sizes for compatibility
+      "xs": [
+        "12px",
+        {
+          lineHeight: "16px",
+        },
+      ],
+      "sm": [
+        "14px",
+        {
+          lineHeight: "20px",
+        },
+      ],
+      "base": [
+        "16px",
+        {
+          lineHeight: "24px",
+        },
+      ],
+      "lg": [
+        "18px",
+        {
+          lineHeight: "28px",
+        },
+      ],
+      "xl": [
+        "20px",
+        {
+          lineHeight: "28px",
+        },
+      ],
+      "2xl": [
+        "24px",
+        {
+          lineHeight: "32px",
+        },
+      ],
+      "3xl": [
+        "30px",
+        {
+          lineHeight: "36px",
+        },
+      ],
     },
     extend: {
       colors: {
         "primary-500": "#877EFF",
+        "primary-400": "#A29FFF",
+        "primary-600": "#6B5FFF",
         "secondary-500": "#FFB620",
         blue: "#0095F6",
         "logout-btn": "#FF5A5A",

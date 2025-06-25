@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Threads",
@@ -20,12 +21,15 @@ export default function RootLayout({
             <div className="flex w-full flex-1 flex-col gap-6">
               <h2 className="text-light-1 text-xl font-bold">Threads</h2>
               <nav className="flex flex-col gap-4">
-                <a href="/" className="text-light-2 hover:text-light-1 transition-colors">
+                <Link href="/" className="text-light-2 hover:text-light-1 transition-colors">
                   🏠 Home
-                </a>
-                <a href="/onboarding" className="text-light-2 hover:text-light-1 transition-colors">
+                </Link>
+                <Link href="/profile" className="text-light-2 hover:text-light-1 transition-colors">
                   👤 Profile
-                </a>
+                </Link>
+                <Link href="/account" className="text-light-2 hover:text-light-1 transition-colors">
+                  ⚙️ Account
+                </Link>
               </nav>
             </div>
           </aside>

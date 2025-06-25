@@ -161,3 +161,45 @@
 .comment-form_btn {
   @apply rounded-3xl bg-primary-500 px-8 py-2 !text-small-regular text-light-1 max-xs:w-full !important;
 }
+
+/* Auth Forms */
+.auth-form {
+  @apply bg-dark-2 border border-dark-4 rounded-lg p-8 shadow-xl;
+}
+
+.auth-form_input {
+  @apply border border-dark-4 bg-dark-3 text-light-1 rounded-md px-3 py-2 transition-all duration-200 focus:border-primary-500 focus:ring-1 focus:ring-primary-500 !important;
+}
+
+.auth-form_button {
+  @apply w-full rounded-md bg-primary-500 px-4 py-2 text-sm font-medium text-white hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-dark-1 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 !important;
+}
+
+.auth-form_button-secondary {
+  @apply w-full rounded-md border border-dark-4 bg-dark-2 px-4 py-2 text-sm font-medium text-light-1 hover:bg-dark-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-dark-1 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 !important;
+}
+
+/* Profile Image Utilities */
+.profile-image {
+  @apply aspect-square object-cover rounded-full !important;
+}
+
+.profile-image-container {
+  @apply relative overflow-hidden rounded-full !important;
+}
+
+.profile-image-sm {
+  @apply w-10 h-10 !important;
+}
+
+.profile-image-md {
+  @apply w-16 h-16 !important;
+}
+
+.profile-image-lg {
+  @apply w-20 h-20 !important;
+}
+
+.profile-image-xl {
+  @apply w-24 h-24 !important;
+}
