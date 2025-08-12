@@ -28,8 +28,6 @@ export default function RootLayout({
       appearance={{
         cssLayerName: 'clerk',
       }}
-      signInUrl="/sign-in"
-      signUpUrl="/sign-up"
       afterSignInUrl="/"
       afterSignUpUrl="/onboarding"
     >
